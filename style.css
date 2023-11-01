@@ -1,5 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.verticle-line{
+    height: 60px;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+.nav-search{
+    width: 45%;
+    border: 1px solid #f2f2f2;
+    background-color: #f8f8f8;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.nav-search>input{
+    border: none;
+    width: 90%;
+    background-color: transparent;
+    padding: 10px;
+}
+#categories-section,footer{
+    width: 80vw;
+    margin: auto;
+}
+.footer-3,.footer-2{
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    line-height: 18px;
+    margin: 15px;
+}
+.footer-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.footer-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer-2-c1{
+    width: 40%;
+}
+.footer-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-link>button{
+    width: 95px;
+    border: none;
+    border-radius: 5px;
+    background-color: #213b50;
+    color: white;
+    padding: 10px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.footer-1{
+    display: flex;
+}
+#f1-table-1{
+    flex: 2;
+}
+#f2-table-2{
+    flex: 3;
+}
+table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+td{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+td>a{
+    text-decoration: none;
+    color: rgb(102, 102, 102) !important;
+}
+.my-container{
+    width: 80vw;
+    margin: auto;
+    overflow-x: scroll;
+}
+.my-list{
+    white-space: nowrap;
+}
+.my-list>img{
+    display: inline-block;
+}
+.my-card{
+    width: 200px;
+}
+.time{
+    background-color: #f8f8f8;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.product-name{
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.product-weight{
+    color: #8f96ac;
+    font-size: 13px;
+}
+#product-section{
+    width: 80vw;
+    margin: auto;
+}
+.container{
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+}
+.card{
+    border-radius: 10px !important;
 }
