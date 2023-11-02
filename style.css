@@ -44,6 +44,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 .icons{
     width: 40px;
@@ -165,6 +166,9 @@ td>a{
 
 /* For mobile phones and Tablets */
 @media (max-width: 768px) {
+    header{
+        position: relative;
+    }
     #my-nav{
         display: flex;
         flex-direction: column;
@@ -185,6 +189,7 @@ td>a{
     nav>.verticle-line{
         display: none !important;
     }
+    
     #hero-section{
         display: none !important;
     }
