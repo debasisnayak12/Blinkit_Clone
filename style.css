@@ -11,6 +11,7 @@
 header{
     position: sticky;
     top: 0px;
+    z-index: 1000;
 }
 .nav-search{
     width: 45%;
@@ -25,6 +26,9 @@ header{
     width: 90%;
     background-color: transparent;
     padding: 10px;
+}
+.nav-search>input:focus{
+    outline: none;
 }
 #categories-section,footer{
     width: 80vw;
@@ -52,24 +56,34 @@ header{
     font-size: 25px;
 }
 .footer-2{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     margin-bottom: 30px;
+    width: 100%;
 }
 .footer-2-c1{
-    width: 40%;
+    /* width: 40%; */
 }
 .footer-link{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    /* display: flex; */
+    display: grid;
+    /* align-items: center; */
+    /* gap: 10px; */
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 30px;
+    padding: 10px;
 }
-.footer-link>button{
+.footer-link h5{
+    margin-right: 5px;
+}
+.footer-link button{
     width: 95px;
     border: none;
     border-radius: 5px;
-    background-color: #213b50;
+    background-color: #213b50 !important;
     color: white;
     padding: 10px;
 }
@@ -80,14 +94,16 @@ header{
     gap: 15px;
 }
 .footer-1{
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-#f1-table-1{
+/* #f1-table-1{
     flex: 2;
 }
 #f2-table-2{
     flex: 3;
-}
+} */
 table{
     width: 100%;
     margin-bottom: 20px;
@@ -131,9 +147,10 @@ td>a{
     color: #8f96ac;
     font-size: 13px;
 }
-#product-section{
+#product-section,#product-section-2{
     width: 80vw;
     margin: auto;
+    z-index: 1;
 }
 .container{
     display: flex;
@@ -142,4 +159,74 @@ td>a{
 }
 .card{
     border-radius: 10px !important;
+}
+
+/* responsive for all devices  */
+
+/* For mobile phones and Tablets */
+@media (max-width: 768px) {
+    #my-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-search{
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+    #my-nav>a{
+        margin-top: 10px;
+    }
+    #my-nav>button{
+        margin-bottom: 5px;
+    }
+    nav>.verticle-line{
+        display: none !important;
+    }
+    #hero-section{
+        display: none !important;
+    }
+    #my-list>img{
+        width: 100% !important;
+    }
+    #categories-section{
+        width: 100%;
+    }
+
+
+    
+    .footer-1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-link>button{
+        width: 30%;
+        padding: 5px;
+        margin-bottom: 10Px;    
+    }
+    .footer-link > h5{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+    .footer-link{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btnContainer{
+        display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 10px;
+    } 
+}
+
+/* For laptops and Desktop */
+@media (min-width:769px){
+    /* Already we can use Bootstrap for responsive */
 }
